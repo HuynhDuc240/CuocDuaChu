@@ -12,4 +12,4 @@
 6 Connect các lane detect, phát hiện chướng ngại vậy, biển báo, điều chỉnh các thông số, các hàm ở carcontrol sao cho hợp lý
 
 ###### TESTING
-7. Kiểm test lại quá trình f 
+7. Kiểm test lại quá trình, fix bug
