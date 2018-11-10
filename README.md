@@ -1,15 +1,33 @@
-# CuocDuaChu
-1. Đọc hiểu source code carcontrol thử thay đổi các tham số speed, góc quay. viết thêm các function mới như giảm tốc khi cua, tăng tốc khi đi thẳng.
+# ROS_Package_example
+## I. Cài đặt
+1.Trước tiên cần cài đặt Ubuntu 16.04 hoặc mới hơn.
 
-2. Code lại lane detect cho hợp lý, nhận diện rõ lane đường, show thuật toán...
+2.Lựa chọn 1 trong 2 phiên bản ROS sau:
 
-3. Phát Hiện Chướng ngại vật trên đường đi, chỉ rõ chướng ngại vật
+  Cài đặt ROS Lunar:
+  http://wiki.ros.org/lunar/Installation/Ubuntu
+  
+  Cài đặt ROS Melodic:
+  http://wiki.ros.org/melodic/Installation/Ubuntu
+  
+  Chú ý: cần cài đặt bản đầy đủ. Ví dụ với ROS Lunar thì cài đặt bản đầy đủ như sau: 
+  
+  $sudo apt-get install ros-lunar-desktop-full
+  
+  Hoàn Thiện đầy đủ các bước từ mục 1.1 đến 1.7
+  
+3. Tạo ROS Workspace
 
-4. Training biển báo bằng cách thu thập dữ liệu, code ml bằng py với 4 hidden layer, kiểm test với độ chính xác trên 95%
+  $ mkdir -p ~/catkin_ws/src
+  
+  $ cd ~/catkin_ws/
+  
+  $ catkin_make
+  
+  $ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 
-5. Phát hiện biển báo, xem rẽ trái hay phải
+  $ source ~/.bashrc
+  
+4. Cài đặt rosbridge-suite
 
-6 Connect các lane detect, phát hiện chướng ngại vậy, biển báo, điều chỉnh các thông số, các hàm ở carcontrol sao cho hợp lý
-
-###### TESTING
-7. Kiểm test lại quá trình, fix bug
+$ sudo apt-get install ros-lunar-rosbridge-server
